@@ -1,5 +1,14 @@
 :root{
     --fuente:'Rubik', sans-serif;
+    --paleViolet:Pale Violet (sub-heading at the top of the app UI): hsl(276, 100%, 81%);
+    --moderateViolet:hsl(276, 55%, 52%);
+    --darkViolet:hsl(271, 15%, 43%);
+    --grayishBlue:hsl(206, 6%, 79%);
+    --desaturatedViolet:hsl(271, 36%, 24%);
+    --darkGrayish:hsl(270, 7%, 64%);
+    --lightGrayish: hsl(270, 20%, 96%);
+    --white: #ffffff;
+
 
 }
 
@@ -8,4 +17,53 @@
     padding:0;
     box-sizing: border-box;
     font-family:var(--fuente);
+}
+
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    background-color:var(--lightGrayish);
+}
+
+.container{
+    background-color:var(--white);
+    width: 15rem;
+    height:25rem;
+    border-radius:1.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding:.5rem; */
+    overflow:hidden;
+    
+}
+
+.container .chat-app{
+    background-color:var(--lightGrayish);
+    width: 15rem;
+    height:25rem;
+    /* padding:1rem; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
+}
+
+.container .chat-app .data-contact{
+    background-image: linear-gradient(to left, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
+    display: flex;
+}
+
+.container .chat-app .data-contact .avatar{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius:50%;
+    border: 1px solid var(--white);
+    
 }
