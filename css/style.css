@@ -29,15 +29,32 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+}
+
+.white-box{
+    background-color: var(--white);
+    width:8.2rem;
+    height:1.9rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: absolute;
+    top:3.5rem;
 }
 .container{
-    width: 20rem;
+    width: 16rem;
     border-radius: 2rem;
     background-color: var(--white);
+    padding:.6rem;
+    -webkit-box-shadow: 13px 16px 15px -6px rgba(0,0,0,0.11); 
+box-shadow: 13px 16px 15px -6px rgba(0,0,0,0.11);
 }
 
 .chat {
-    margin:5px;
+    overflow: hidden;
+    border-radius: 1.5rem;
+    /* position: relative; */
+    /* margin:1rem; */
 }
 
 .chat .contact {
@@ -46,10 +63,11 @@ body {
     justify-content: space-between;
     background-image: linear-gradient(to left, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1.7rem;
     padding-bottom: .7rem;
     padding-left: .5rem;
     padding-right: .5rem;
+    
 }
 
 .chat .contact .left,
@@ -75,6 +93,7 @@ body {
 
 .chat .contact .icon {
     color: var(--white);
+    font-size: .8rem;
 }
 
 .chat .contact .left .img-avatar {
@@ -84,33 +103,36 @@ body {
     border: 1px solid var(--white);
 
 }
+.chat .contact .left .icon-left{
+    color:var(--white);
+}
 
 .chat .contact .left .icon {
-    padding-right: .5rem;
+    padding-right: .3rem;
 }
 
 .chat .content-chat {
     background-color: var(--lightGrayish);
     padding: .5rem;
     font-weight: 700;
-    font-size: .8rem;
+    font-size: .6rem;
     width: 100%;
-    margin-top: .5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .chat .content-chat .text-received {
-    padding: .5rem;
+    width: 9rem;
+    padding: .7rem;
     background-color: var(--gray);
     color: var(--moderateViolet);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
-    border-bottom-left-radius: .5rem;
+    border-bottom-left-radius: .2rem;
     border-bottom-right-radius: 1rem;
-    margin-top: 1rem;
-    width: 12rem;
+    margin-top: .5rem;
+    font-weight: 700;
 
 
 }
@@ -124,24 +146,25 @@ body {
 }
 
 .chat .content-chat .message-sent .text-sent {
+    margin-top: .5rem;
     background-color: var(--white);
-    width: 12rem;
+    max-width: 9rem;
+    /* font-size: .6rem; */
     color: var(--darkGrayish);
     padding: .5rem;
-    margin-top: 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: .5rem;
+    border-bottom-right-radius: .2rem;
 
 
 }
 
 .chat .content-chat .message-sent .img-sent {
     background-color: var(--lightGrayish);
-    width: 4rem;
-    height: 4rem;
-    margin-left: .5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: .3rem;
     border-radius: 25%;
     margin-top: 1rem;
 
@@ -151,22 +174,30 @@ body {
 .chat .content-chat .btn-price{
     display: flex;
     justify-content: space-between;
-    width: 17rem;
-    padding:1rem .5rem;
+    align-items: center;
+    width: 11rem;
+    margin-top:.5rem;
+    padding:.5rem .5rem;
     background-image: linear-gradient(to right, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    border-bottom-left-radius: .5rem;
-    border-bottom-right-radius: 1rem;
+    border-top-left-radius: .7rem;
+    border-top-right-radius: .7rem;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .7rem;
 }
 
-.chat .content-chat .btn-price .left .price-text{
+.chat .content-chat .btn-price .left .description{
     color:rgba(255,255,255,0.5);
     display: flex;
     align-items: center;
 }
-.chat .content-chat .btn-price .left .price-text .icon {
-    font-size:1.5rem;
-    color:rgba(233, 66, 255, 1);
-    font-weight: ;
+.chat .content-chat .btn-price .left .description .icon {
+    font-size:1rem;
+    color:rgba(255, 255, 255, 0.3);
+    padding-right: .5rem;
+    
+}
+
+.chat .content-chat .btn-price .right{
+    color:var(--white);
+    font-size:1rem;
 }
