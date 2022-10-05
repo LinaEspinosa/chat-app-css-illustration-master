@@ -8,13 +8,11 @@
     --darkGrayish: hsl(270, 7%, 64%);
     --lightGrayish: hsl(270, 20%, 96%);
     --white: #ffffff;
-    --background-body:#f5f3f8;
-    --gray:#ebe4f2;
-    --light-Magenta: hsl(293, 100%, 63%);
-    --light-Violet: hsl(264, 100%, 61%)
-    
-
-
+    --background-body: #f5f3f8;
+    --gray: #ebe4f2;
+    --light-Magenta: rgb(233, 66, 255);
+    --light-Violet: hsl(264, 100%, 61%);
+    --veryLightMagenta: hsl(289, 100%, 72%)
 }
 
 * {
@@ -29,7 +27,7 @@ body {
     height: 100vh;
 }
 
-.chat{
+.chat {
     padding: .5rem;
 }
 
@@ -38,91 +36,154 @@ body {
     justify-content: space-between;
     background-image: linear-gradient(to left, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
     align-items: center;
-    padding-top:2rem;
-    padding-bottom:.7rem;
+    padding-top: 2rem;
+    padding-bottom: .7rem;
     padding-left: .5rem;
-    padding-right:.5rem;
+    padding-right: .5rem;
 }
+
 .chat .contact .left,
-.chat .contact .right{
+.chat .contact .right {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    
+
 }
 
-.chat .contact .left .name{
+.chat .contact .left .name {
     font-size: .7rem;
-    color:rgba(255,255,255,0.8);
-    padding-left:.5rem;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: .5rem;
 
 }
-.chat .contact .left .name .name-text{
-    display:block;
-    font-size:.5rem;
-    color:rgba(255,255,255,0.3)
+
+.chat .contact .left .name .name-text {
+    display: block;
+    font-size: .5rem;
+    color: rgba(255, 255, 255, 0.3)
 }
+
 .chat .contact .icon {
     color: var(--white);
 }
 
-.chat .contact .left .img-avatar{
+.chat .contact .left .img-avatar {
     width: 1.5rem;
-    height:1.5rem;
-    border-radius:50%;
+    height: 1.5rem;
+    border-radius: 50%;
     border: 1px solid var(--white);
-    
-}
-.chat .contact .left .icon{
-    padding-right:.5rem;
+
 }
 
-.chat .content-chat{
-    background-color:var(--lightGrayish);    
+.chat .contact .left .icon {
+    padding-right: .5rem;
+}
+
+.chat .content-chat {
+    background-color: var(--lightGrayish);
     padding: .5rem;
-    font-weight:700;
-    font-size:.8rem;
-    width: 12rem;
+    font-weight: 700;
+    font-size: .8rem;
+    width: 100%;
     margin-top: .5rem;
     display: flex;
     flex-direction: column;
-    justify-content:space-between
-    
+    justify-content: space-between
 }
-.chat .content-chat .message-received{
-    display: flex;
-    justify-content
-}
-.chat .content-chat .message-received .text-received{
-    padding:.5rem;
-    background-color:var(--gray);
-    color:var(--moderateViolet);
+
+.chat .content-chat .text-received {
+    padding: .5rem;
+    background-color: var(--gray);
+    color: var(--moderateViolet);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: 1rem;
-    margin-top:1rem;
-    
+    margin-top: 1rem;
+    width: 12rem;
+
 
 }
 
-.chat .content-chat .message-sent .text-sent{
-    background-color:var(--white);
-    width: 10rem;
-    color:var(--darkGrayish);
-    padding:.5rem;
-    margin-top:1rem;
+.chat .content-chat .message-sent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    
+}
+
+.chat .content-chat .message-sent .text-sent {
+    background-color: var(--white);
+    width: 12rem;
+    color: var(--darkGrayish);
+    padding: .5rem;
+    margin-top: 1rem;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: .5rem;
-    
-    
+
+
 }
 
-.chat .content-chat  .img-sent{
+.chat .content-chat .message-sent .img-sent {
     background-color: var(--lightGrayish);
-    width: 3rem;
-    height:3rem;
-    border-radius:25%;
+    width: 4rem;
+    height: 4rem;
+    margin-left: .5rem;
+    border-radius: 25%;
+    margin-top: 1rem;
+
+}
+
+/* 
+.chat .content-chat .price-time .time-hour,
+.chat .content-chat .price-time .time-minute {
+    display:flex;
+    margin-top: 1rem;
+    padding:1rem .5rem;
+    width: 15rem;
+}
+
+.chat .content-chat .price-time .circle{
+    width: 1.2rem;
+    height:1.2rem;
+    border-radius: 50%;
+    border:2.5px solid rgba(255,255,255,0.2);
+    margin-right:1rem;
+}
+
+.chat .content-chat .price-time .price-text{
+    color:rgba(255,255,255,0.5);
+    display:flex;
+    align-items: center;
+}
+.chat .content-chat .price-time .price-text span{
+    font-size:1.2rem;
+    color:var(--white);
+    
+} */
+
+.chat .content-chat .btn-price{
+    display: flex;
+    justify-content: space-between;
+    width: 17rem;
+    padding:1rem .5rem;
+    background-image: linear-gradient(to right, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: .5rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.chat .content-chat .btn-price .left .price-text{
+    color:rgba(255,255,255,0.5);
+    display: flex;
+    align-items: center;
+}
+.chat .content-chat .btn-price .left .price-text .icon {
+    font-size:1.5rem;
+    color:rgba(233, 66, 255, 1);
+    font-weight: ;
 }
