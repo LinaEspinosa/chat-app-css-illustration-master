@@ -10,6 +10,8 @@
     --white: #ffffff;
     --background-body:#f5f3f8;
     --gray:#ebe4f2;
+    --light-Magenta: hsl(293, 100%, 63%);
+    --light-Violet: hsl(264, 100%, 61%)
     
 
 
@@ -65,8 +67,8 @@ body {
 }
 
 .chat .contact .left .img-avatar{
-    width: 1.2rem;
-    height:1.2rem;
+    width: 1.5rem;
+    height:1.5rem;
     border-radius:50%;
     border: 1px solid var(--white);
     
@@ -78,17 +80,49 @@ body {
 .chat .content-chat{
     background-color:var(--lightGrayish);    
     padding: .5rem;
+    font-weight:700;
+    font-size:.8rem;
+    width: 12rem;
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between
+    
 }
-
 .chat .content-chat .message-received{
-    background-color:var(--gray);
-    color:var(--desaturatedViolet);
-    font-weight:400;
-    width: 10rem;
+    display: flex;
+    justify-content
+}
+.chat .content-chat .message-received .text-received{
     padding:.5rem;
+    background-color:var(--gray);
+    color:var(--moderateViolet);
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: 1rem;
-    margin-top: 1rem;
+    margin-top:1rem;
+    
+
+}
+
+.chat .content-chat .message-sent .text-sent{
+    background-color:var(--white);
+    width: 10rem;
+    color:var(--darkGrayish);
+    padding:.5rem;
+    margin-top:1rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: .5rem;
+    
+    
+}
+
+.chat .content-chat  .img-sent{
+    background-color: var(--lightGrayish);
+    width: 3rem;
+    height:3rem;
+    border-radius:25%;
 }
