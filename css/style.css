@@ -51,7 +51,7 @@ body {
     justify-content: center;
     margin-top: 3rem;
     width: 15rem;
-
+    flex-wrap: wrap;
     border-radius: 2rem;
     background-color: var(--white);
     padding: .6rem;
@@ -217,8 +217,8 @@ body {
 }
 
 .container .chat .content-chat .input-message {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: var(--white);
     padding: .2rem 0;
@@ -227,14 +227,14 @@ body {
     border: none;
     margin: 1rem 0;
     padding-left: 1rem;
-    
+
 }
 
 .container .chat .content-chat .input-message input {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
     color: var(--grayishBlue);
-    border:none;
+    border: none;
     font-weight: 700;
     font-size: .6rem;
     letter-spacing: -0.1px;
@@ -254,21 +254,17 @@ body {
     text-align: center;
     padding: 2rem;
     margin-top: 2rem;
+    font-size: 1.2rem;
+    color: var(--darkGrayish);
+    line-height: 2rem;
+    font-weight: 500;
 
 }
 
 .content h2 {
     font-size: 2.7rem;
     color: var(--desaturatedViolet);
-}
-
-.content p {
-    font-size: 1.2rem;
-    color: var(--darkGrayish);
-    margin-top: 2.5rem;
-    text-align: center;
-    line-height: 2rem;
-    font-weight: 500;
+    margin-bottom: 2rem;
 }
 
 .color-purple {
@@ -296,14 +292,176 @@ body {
 }
 
 @media only screen and (min-width: 376px) {
-    .container {
+    body {
+        width: 70%;
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .container {
+        margin-top: -5rem;
+        width: 12rem;
+        padding: .4rem;
+        margin-left: 28rem;
+        border-radius: 1rem;
+    }
+    
+    .container .chat {
+        border-radius: 1.2rem;
+        padding: .1rem;
+    }
+    
+    .white-box {
+        width: 5rem;
+        height: 1rem;
+        top: 6rem;
+        left: 27rem;
+        z-index: 1;
+    }
+    
+    
+    .chat .contact .left .name {
+        font-size: .5rem;
+        padding-left: .3rem;
+        
+    }
+    
+    .chat .contact .left .name .name-text {
+        font-size: .3rem;
+    }
+    
+    .chat .contact .icon {
+        font-size: .5rem;
     }
 
+    .container .chat .content-chat {
+        font-size: .4rem;
+    }
+
+    .chat .contact .left .icon-left {
+        font-size: .6rem;
+    }
+    
+    .chat .contact .left .img-avatar {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        border: 1px solid var(--white);
+
+    }
+    
+    .chat .content-chat {
+        padding: .4rem;
+        font-size: .6rem;
+        padding-top: 0;
+    }
+    
+    .chat .content-chat .text-received {
+        width: 6rem;
+        padding: .5rem;
+        margin-top: .5rem;
+    }
+    
+    
+    .chat .content-chat .message-sent .text-sent {
+        margin-top: .3rem;
+        max-width: 9rem;
+    }
+    
+    .chat .content-chat .message-sent .img-sent {
+        width: 1.7rem;
+        height: 1.7rem;
+        margin-left: .3rem;
+        border-radius: 25%;
+        margin-top: .5rem;
+        
+    }
+
+    .container .chat .content-chat .input-message {
+        margin-top: .7rem;
+        margin-bottom: .2rem;
+        /* padding-left: .rem; */
+
+    }
+    
+    
+    .container .chat .content-chat .input-message input {
+        font-weight: 700;
+        font-size: .3rem;
+        letter-spacing: -0.1px;
+    }
+    
+    .container .input-message .input-icon {
+        font-size: 1rem;
+        padding-left: 4rem;
+        
+    }
+    
+    .chat .content-chat .btn-price {
+        
+        width: 7rem;
+        padding: .1rem .5rem;
+        border-top-left-radius: .7rem;
+        border-top-right-radius: .5rem;
+        border-bottom-left-radius: .2rem;
+        border-bottom-right-radius: .5rem;
+    }
+    
+    .chat .content-chat .btn-price .left .description {
+        display: flex;
+        align-items: center;
+    }
+    
+    .chat .content-chat .btn-price .left .description .icon {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.3);
+        padding-right: .5rem;
+
+    }
+    
+    .chat .content-chat .btn-price .right {
+        color: var(--white);
+        font-size: .7rem;
+    }
+    
+    .content {
+        /* width: 10rem; */
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        text-align: left;
+        font-size: .8rem;
+        line-height: 1.2rem;
+        margin-left: 7rem;
+    
+    }
+    
+    .content h2 {
+        font-size: 2rem;
+        color: var(--desaturatedViolet);
+        margin-top: 1.1rem;
+    }
+    .content p {
+        width:19rem;
+    }
     .color-purple {
-        width: 20rem;
-        height: 35rem;
-        border-radius: 0 0 7rem 7rem;
+        width: 25rem;
+        height: 80vh;
+        border-radius: 0 0 11rem 11rem;
+    }
+    .color-gray {
+        width: 25rem;
+        height: 80vh;
+        background-color: #edeaf1;
+        position: absolute;
+        border-radius: 20rem 0 0 0;
+        z-index: -1;
+        bottom: 0;
+        right: 0;
+    
     }
 
     /* .container{
@@ -313,11 +471,10 @@ body {
     left:10rem;
     overflow: none;
   } */
-
-    .chat {
-
-        border-radius: 1.5rem;
-        position: relative;
-        /* margin:1rem; */
+  
+  /*.chat {
+      
+      border-radius: 1.5rem;
+      position: relative;
+      /* margin:1rem; */
     }
-}
