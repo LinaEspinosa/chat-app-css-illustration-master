@@ -37,11 +37,12 @@ body {
 .white-box {
     background-color: var(--white);
     width: 8.2rem;
-    height: 1.5rem;
+    height: 1.2rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     position: absolute;
-    top: 3.3rem;
+    top: 0rem;
+    left:2.8rem;
     z-index: 1;
 }
 
@@ -78,6 +79,7 @@ body {
     background-image: linear-gradient(to left, #e942ff, #d43eff, #bd3bff, #a439ff, #8838ff);
     align-items: center;
     padding: 1.5rem .5rem .7rem .5rem;
+    position:relative;
 
 
 }
@@ -317,9 +319,7 @@ body {
     .white-box {
         width: 5rem;
         height: 1rem;
-        top: 6rem;
-        left: 27rem;
-        z-index: 1;
+        
     }
     
     
